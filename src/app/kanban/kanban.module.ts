@@ -1,0 +1,30 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { KanbanComponent } from './kanban/kanban.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {SidebarComponent} from './kanban/sidebar/sidebar.component';
+import {MainContentComponent} from './kanban/main-content/main-content.component';
+import {MatListModule} from '@angular/material/list';
+
+
+
+@NgModule({
+  declarations: [
+    KanbanComponent,
+    SidebarComponent,
+    MainContentComponent
+  ],
+  imports: [
+    CommonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatListModule
+  ],
+  exports: [KanbanComponent, SidebarComponent]
+})
+export class KanbanModule { }
