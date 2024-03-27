@@ -8,6 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {SidebarComponent} from './kanban/sidebar/sidebar.component';
 import {MainContentComponent} from './kanban/main-content/main-content.component';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -23,8 +24,9 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
-  exports: [KanbanComponent, SidebarComponent]
+  exports: [KanbanComponent]
 })
 export class KanbanModule { }

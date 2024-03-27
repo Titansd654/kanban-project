@@ -2,6 +2,46 @@
     flex: 1 1 auto;
 }
 
+.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around 
+}
+
+.column-title {
+    display: flex;
+  flex-direction: row; 
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
 button{
     border-radius: 20px;
+}
+
+#todo-icon {
+    color: blue
+}
+
+#doing-icon {
+    color: purple
+}
+
+#done-icon {
+    color: green
+}
+
+mat-card {
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin-top: 300px;
 }

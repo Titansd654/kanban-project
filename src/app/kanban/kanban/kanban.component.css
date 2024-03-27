@@ -39,6 +39,10 @@ section {
     width: 120px;
   }
 
+  
+.tamaño {
+    width:400px;
+}  
 mat-icon{
     color: purple
 }  
