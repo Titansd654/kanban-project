@@ -9,6 +9,8 @@ import {SidebarComponent} from './kanban/sidebar/sidebar.component';
 import {MainContentComponent} from './kanban/main-content/main-content.component';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { ColumnContentComponent } from './kanban/main-content/column-content/column-content.component';
+import { CardContentComponent } from './kanban/main-content/column-content/card-content/card-content.component';
 
 
 
@@ -16,7 +18,9 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     KanbanComponent,
     SidebarComponent,
-    MainContentComponent
+    MainContentComponent,
+    ColumnContentComponent,
+    CardContentComponent
   ],
   imports: [
     CommonModule,

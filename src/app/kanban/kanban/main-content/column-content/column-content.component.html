@@ -1,0 +1,22 @@
+<div class="columns">
+    <div class="column-title">
+      <span class="material-icons" id={{color}}>fiber_manual_record</span>
+    <h3> {{title}} </h3>
+    </div>
+    <div class="column-content">
+    
+
+        <app-card-content *ngFor="let cardContent of cardsContent" title={{cardContent.title}} content={{cardContent.content}}></app-card-content>
+
+
+
+
+        <!-- <app-card-content title="Build UI for onboarding flow" content="0 of 3 subtasks"></app-card-content>
+        <app-card-content title="Build UI for search" content="0 of 3 subtasks"></app-card-content>
+        <app-card-content title="Build settings UI" content="0 of 2 subtasks"></app-card-content>
+        <app-card-content title="QA and test all major user journeys" content="0 of 3 subtasks"></app-card-content> -->
+
+    </div>
+  </div>
+
+  

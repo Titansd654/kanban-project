@@ -1,0 +1,27 @@
+
+.column-title {
+    display: flex;
+  flex-direction: row; 
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#blue-icon {
+    color: blue
+}
+
+#purple-icon {
+    color: purple
+}
+
+#green-icon {
+    color: green
+}

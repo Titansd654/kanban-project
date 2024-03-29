@@ -2,12 +2,22 @@
     <mat-toolbar>
       <span>Platform Launch</span>
       <span class="example-spacer"></span>
-      <button mat-flat-button color="primary">+Add New Task</button>  
+      <button mat-flat-button color="primary" (click)="localmover()">+Add New Task</button>  
     </mat-toolbar>
 
   <div class="board">
 
-    <div class="columns">
+    <app-column-content 
+      *ngFor="let columnContent of columnsContent" 
+      title={{columnContent.title}} 
+      color={{columnContent.color}}>
+    </app-column-content>
+
+
+    <!-- <app-column-content title="TODO" color="blue-icon"></app-column-content>
+    <app-column-content title="DOING" color="purple-icon"></app-column-content>
+    <app-column-content title="DONE" color="green-icon"></app-column-content> -->
+    <!-- <div class="columns">
       <div class="column-title">
         <span class="material-icons" id="todo-icon">fiber_manual_record</span>
       <h3>TODO</h3>
@@ -31,9 +41,9 @@
           <mat-card-content>0 of 3 subtasks</mat-card-content>
         </mat-card>
       </div>
-    </div>
+    </div> -->
 
-    <div class="columns">
+    <!-- <div class="columns">
       <div class="column-title">
         <span class="material-icons" id="doing-icon">fiber_manual_record</span>
       <h3>DOING</h3>
@@ -113,14 +123,15 @@
           <mat-card-content>2 of 2 subtasks</mat-card-content>
         </mat-card>
       </div>
-    </div>
+    </div> -->
     
     
     
     
     
     
-    <div class="columns">
-      <h1>+ New column</h1>
-    </div>
+     <div class="new-column">
+       <h1>+ New column</h1>
+     </div>
+
   </div>

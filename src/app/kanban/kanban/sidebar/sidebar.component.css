@@ -14,16 +14,12 @@ mat-icon{
 }
 
 .list-element {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    height: 40px;
-    width: 250px;
-    margin-top: 15px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-   
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  width: 300px;
 }
+
+
 .active {
     background-color: violet;
 }
@@ -36,3 +32,33 @@ mat-icon{
     flex-direction: row;
 }
 
+.icon-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.text {
+    flex: 1;
+    margin: 0;
+    display: inline;
+}
+
+.material-icons {
+    margin-top: 10px;
+    
+}
+
+
+/* .mat-mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item--with-one-line {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+} */

@@ -8,7 +8,9 @@
 
 <p class="list-title">ALL BOARDS (8)</p>
 
-<ul class="list-section">
+
+
+<!-- <ul class="list-section">
    <li class="list-element">
     <span class="material-icons">list_alt</span>
     <p>Platform Launch</p>
@@ -21,7 +23,41 @@
     <span class="material-icons">list_alt</span>
     <p>Roadmap</p>
   </li>
-</ul>
+</ul> -->
+
+<mat-action-list>
+  <button mat-list-item class="list-element active">
+    <mat-icon matListItemIcon>list_alt</mat-icon>
+    <div matListItemTitle>Platform Launch</div>
+  </button>
+  <button mat-list-item class="list-element">
+    <mat-icon matListItemIcon>list_alt</mat-icon>
+    <div matListItemTitle>Marketing plan</div>
+  </button>
+  <button mat-list-item class="list-element">
+    <mat-icon matListItemIcon>list_alt</mat-icon>
+    <div matListItemTitle>Road map</div>
+  </button>
+</mat-action-list>
+
+  <!-- <button mat-list-item class="active">
+    <p class="text">Platform Launch</p>
+  </button>
+  <button mat-list-item class="list-element active">
+    <span class="material-icons">list_alt</span>
+    <p class="text">Marketing Plan</p>
+    </button>
+  <button mat-list-item >Roadmap</button>
+</mat-action-list>  -->
+
+<!-- <mat-list>
+  <div mat-subheader>Folders</div>
+  @for (folder of folders; track folder) {
+    <mat-list-item>
+      <mat-icon matListItemIcon>folder</mat-icon>
+      <div matListItemTitle>{{folder.name}}</div>
+      <div matListItemLine>{{folder.updated | date}}</div>
+    </mat-list-item> -->
 
 <div class="new-board">
   <span class="material-icons">list_alt</span>
